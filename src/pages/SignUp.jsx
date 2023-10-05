@@ -109,7 +109,7 @@ export default function SignUp() {
       .catch(() => console.log("error occured"));
     axios({
       method: "post",
-      url: "https://3.84.171.136:5000/user/add",
+      url: "http://3.84.171.136:5000/user/add",
       data: payload,
       headers: { "Content-Type": "application/json" },
     })

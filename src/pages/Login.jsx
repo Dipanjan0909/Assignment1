@@ -58,7 +58,7 @@ export default function SignIn() {
     data.append("password", password.value)
     axios({
       method: "post",
-      url: "https://bd-userservice-lb-staging-233784656.us-east-1.elb.amazonaws.com/api/v1/login",
+      url: "http://bd-userservice-lb-staging-233784656.us-east-1.elb.amazonaws.com/api/v1/login",
       data: data,
       headers: { "Content-Type": "multipart/form-data" },
     }).then((res)=>{if(res.status==200){
