@@ -97,7 +97,7 @@ export default function SignUp() {
     };
     axios({
       method: "post",
-      url: " https://bd-userservice-lb-staging-233784656.us-east-1.elb.amazonaws.com/api/v1/signup",
+      url: " http://bd-userservice-lb-staging-233784656.us-east-1.elb.amazonaws.com/api/v1/signup",
       data: payload,
       headers: { "Content-Type": "application/json" },
     })
