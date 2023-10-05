@@ -97,7 +97,7 @@ export default function SignUp() {
     };
     axios({
       method: "post",
-      url: " http://bd-userservice-lb-staging-233784656.us-east-1.elb.amazonaws.com/api/v1/signup",
+      url: " https://bd-userservice-lb-staging-233784656.us-east-1.elb.amazonaws.com/api/v1/signup",
       data: payload,
       headers: { "Content-Type": "application/json" },
     })
@@ -109,7 +109,7 @@ export default function SignUp() {
       .catch(() => console.log("error occured"));
     axios({
       method: "post",
-      url: "http://3.84.171.136:5000/user/add",
+      url: "https://3.84.171.136:5000/user/add",
       data: payload,
       headers: { "Content-Type": "application/json" },
     })
